@@ -11,7 +11,7 @@
 
 <body>
 	<!-- partial:index.partial.html -->
-	<div>
+	<div style="background-color: #FFF ;">
 		<div class="very-specific-design" id="very-specific-design">
 			<section class="container">
 				<div class="card">
@@ -51,7 +51,8 @@
 						<img class="fundo-img"
 							src="https://images.pexels.com/photos/9553909/pexels-photo-9553909.jpeg" />
 						<span class="cuerpo">Google busca poder analizar tanto tus sitios web como tus aplicaciones en
-							una sola herramienta. Recuerda que es posible que cuentes tanto con un <i>E-Commerce</i> como con
+							una sola herramienta. Recuerda que es posible que cuentes tanto con un <i>E-Commerce</i>
+							como con
 							un <i>Mobile Commerce</i>, por lo que Google quiere que puedas administrarlo todo con Google
 							Analytics 4, sin la necesidad de otra aplicación o herramienta.</span>
 					</div>
@@ -62,31 +63,31 @@
 				</div>
 
 				<div class="content-b"><button id="go-button" onclick="toggleFullScreen()"><i
-					class="fa-solid fa-expand"></i></button></div>
-	</div>
+							class="fa-solid fa-expand"></i></button></div>
 		</div>
-		<!-- partial -->
-		<script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
-		<script src="./script.js"></script>
-		<script src="index.js"></script>
+	</div>
+	<!-- partial -->
+	<script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+	<script src="./script.js"></script>
+	<script src="index.js"></script>
 
 </body>
 
 <script>
-    function toggleFullScreen() {
-        var doc = window.document;
-        var docEl = doc.documentElement;
+	function toggleFullScreen() {
+		var doc = window.document;
+		var docEl = doc.documentElement;
 
-        var requestFullScreen = docEl.requestFullscreen || docEl.mozRequestFullScreen || docEl.webkitRequestFullScreen || docEl.msRequestFullscreen;
-        var cancelFullScreen = doc.exitFullscreen || doc.mozCancelFullScreen || doc.webkitExitFullscreen || doc.msExitFullscreen;
+		var requestFullScreen = docEl.requestFullscreen || docEl.mozRequestFullScreen || docEl.webkitRequestFullScreen || docEl.msRequestFullscreen;
+		var cancelFullScreen = doc.exitFullscreen || doc.mozCancelFullScreen || doc.webkitExitFullscreen || doc.msExitFullscreen;
 
-        if (!doc.fullscreenElement && !doc.mozFullScreenElement && !doc.webkitFullscreenElement && !doc.msFullscreenElement) {
-            requestFullScreen.call(docEl);
-        }
-        else {
-            cancelFullScreen.call(doc);
-        }
-    }
+		if (!doc.fullscreenElement && !doc.mozFullScreenElement && !doc.webkitFullscreenElement && !doc.msFullscreenElement) {
+			requestFullScreen.call(docEl);
+		}
+		else {
+			cancelFullScreen.call(doc);
+		}
+	}
 </script>
 
 </html>
